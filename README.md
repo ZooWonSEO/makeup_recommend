@@ -1,6 +1,7 @@
 # Deep-learning을 이용한 메이크업 추천 웹
 
-
+# 프로젝트 목적
+직접 business model을 개발하고 이를 직접 구현해보기
 
 
 
