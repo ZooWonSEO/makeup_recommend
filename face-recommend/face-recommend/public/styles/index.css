@@ -1,0 +1,201 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+#splash-container {
+    display: flex;
+    flex-direction: column;
+    background: #4868ff;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#splash-container .title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#splash-container .description {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#webcam-container {
+    background: #000;
+}
+
+#webcam-video {
+    transform: scale(-1, 1);
+}
+
+#webcam-container button {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 128px;
+    height: 128px;
+    margin-left: -64px;
+    border-radius: 100%;
+    text-indent: 1000000px;
+    background: url('/images/capture.png') no-repeat 50% 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#webcam-video {
+    width: 100%;
+    height: 100%;
+}
+
+#capture-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    background: #4868ff;
+}
+
+#capture-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#capture-again-button,
+#capture-recommend-button {
+    background: #fff;
+    padding: 20px;
+    font-size: 20px;
+    color: #444;
+    border-radius: 5px;
+    border: none;
+}
+
+/*#capture-again-button {*/
+    /*background: white;*/
+/*}*/
+/**/
+/*#capture-recommend-button {*/
+    /*background: white;*/
+/*}*/
+
+#recommend-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#recommend-container.recommend-dog {
+    background: #ffdc5b;
+    color: #caac3f;
+}
+
+#recommend-container.recommend-cat {
+    background: #868686;
+    color: #484848;
+}
+
+#recommend-container.recommend-deer {
+    background: #8c4d29;
+    color: #4c240e;
+}
+
+#recommend-container.recommend-rabbit {
+    background: #f77599;
+    color: #983a54;
+}
+
+#recommend-text {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    padding: 30px 0;
+}
+
+#recommend-class {
+    font-size: 90px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#recommend-again {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#recommend-again-button {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    color: #444;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+#recommend-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#recommend-list-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#recommend-list .recommend-item {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 20px 60px 20px 20px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #444;
+    background: #fff;
+}
+
+#recommend-list .recommend-item::after {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 25px;
+    border: solid #444;
+    border-width: 4px 4px 0 0;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+
+#recommend-list .recommend-item .recommend-item-title {
+    font-weight: bold;
+    font-size: 30px;
+}

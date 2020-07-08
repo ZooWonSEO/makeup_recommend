@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+
+<div id="splash-container" class="container">
+    <div class="title">Loading...</div>
+    <div class="description">Please allow camera permission.</div>
+</div>
+
+<div id="webcam-container" class="container" style="display: none">
+    <video id="webcam-video" autoplay></video>
+    <button id="webcam-capture-button" type="button">Capture</button>
+</div>
+
+<div id="capture-container" class="container" style="display: none">
+    <!--<div></div>-->
+    <canvas id="capture-canvas"></canvas>
+
+    <div id="capture-buttons">
+        <button id="capture-again-button" type="button">다시 찍기</button>
+        <button id="capture-recommend-button" type="button">알맞는 화장법 보기</button>
+    </div>
+</div>
+
+<div id="recommend-container" class="container" style="display: none">
+    <div id="recommend-text">
+        당신의 얼굴형은
+        <div id="recommend-class"></div>
+        입니다.
+    </div>
+
+    <div id="recommend-again">
+        <button id="recommend-again-button" type="button">다시 찍기</button>
+    </div>
+
+    <div id="recommend-list-title">추천영상</div>
+    <div id="recommend-list"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+<script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
