@@ -6,7 +6,7 @@
 # 역할
 - 프로젝트 총괄 및 주제에 따른 시장조사
 - 시스템 흐름도 및 구조 개발
-- image수집 및 augmentation을 이용한 image data 부풀리기
+- image수집 및 augmentation을 이용한 image data 부풀리기(Gauss.Noise, Affine, Crop, Fliplr)
 - DB table 설계
 - 기본적인 front-end 개발
 
